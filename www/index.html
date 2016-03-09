@@ -1,0 +1,404 @@
+<!DOCTYPE HTML>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="google-site-verification" content="pD4do1gJ0EcP1iH4-zc-uIaxcaJqxj_QWUC5w9j-Jjs" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+    <title>Nigerian Seminars</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/framework.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/swipebox.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jqueryui.js"></script>
+    <script type="text/javascript" src="js/framework.plugins.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <link href="css/remove-default-jqm-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body> 
+    <!-- Application Page -->
+    <div data-role="page">
+        <!-- Pre-loader -->
+        <div id="preloader">
+                <div id="status">
+                <p class="center-text">
+                                Loading the content...
+                    <em>Loading depends on your connection speed!</em>
+                </p>
+            </div>
+        </div>
+        <!-- end of Pre-loader -->
+        
+        <!-- Top Menu Links -->
+        <div class="menu-wrapper">
+            <em><i class="fa fa-question-circle"></i>Swipe the icons, tap to select!</em>
+            <div class="menu">
+                <a href="#" class="item" id="selected">
+                    Home
+                </a>    
+                <a href="#" class="item" id="top-menu-events">
+                    Events
+                </a>    
+                <a href="#" class="item">
+                    Venues
+                </a>       
+                <a href="#" class="item">
+                    Providers
+                </a>        
+            </div>
+        </div>
+        <!-- End of top menu -->
+        
+        <!-- Application Top Highlight -->
+        <div class="header">
+            <a href="#" class="main-logo"></a>
+            <div class="header-controls">
+                <a href="#" class="open-more"><i class="fa fa-th-large"></i></a>
+                <a href="#" class="open-slide"><i class="fa fa-star"></i></a>
+                <a href="#" class="open-menu"><i class="fa fa-navicon"></i></a>
+            </div>
+        </div>
+        <!-- end of Application Top Highlight -->
+        
+        <!-- Application's Main container -->
+        <div class="all-elements">
+            <!-- Side bars -->
+            <div class="snap-drawers">
+                <!-- Left Sidebar -->
+                <div class="snap-drawer snap-drawer-left">
+                    <div class="sidebar-header">
+                        <a href="tel:2348099909402"><i class="fa fa-phone"></i></a>
+                        <a href="sms:2348099909402"><i class="fa fa-comment"></i></a>
+                        <a href="https://www.facebook.com/nigerianseminars"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/NigerianSeminar"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-times"></i></a>                
+                    </div>
+                    <div class="sidebar-divider">
+                        Navigation
+                    </div>
+                    <ul class="sidebar-navigation">
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-home"></i>Home<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li class="active-menu"><a href="#"><i class="fa fa-angle-right"></i>Classic<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-tasks"></i>Events<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="event-at-mylocation"><i class="fa fa-angle-right"></i>In My Location<i class="fa fa-circle"></i></a></li>
+                                <li><a href="#" id="event-at-alocation"><i class="fa fa-angle-right"></i>By Location<i class="fa fa-circle"></i></a></li>
+                                <li><a href="#" id="event-categories"><i class="fa fa-angle-right"></i>By Categories<i class="fa fa-circle"></i></a></li>
+                                <li><a href="#" id="event-all-listing"><i class="fa fa-angle-right"></i>All Events<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-building-o"></i>Venues<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="all-venues"><i class="fa fa-angle-right"></i>All Venues<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>                                 
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-book"></i>Training Providers<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="all-training-providers"><i class="fa fa-angle-right"></i>All Providers<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>                 
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-male"></i>Event Managers<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="all-event-managers"><i class="fa fa-angle-right"></i>All Managers<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>                 
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-cog"></i>Equipment Suppliers<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li><a href="#" id="all-equipment-suppliers"><i class="fa fa-angle-right"></i>All Suppliers<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>                 
+                        <li class="has-submenu">
+                            <a class="deploy-submenu" href="#"><i class="fa fa-mobile"></i>Sign-in &amp; Sign-up<i class="fa fa-plus"></i></a>
+                            <ul class="submenu">
+                                <li id="pageapp-login-li"><a href="#" id="pageapp-login"><i class="fa fa-angle-right"></i>Login<i class="fa fa-circle"></i></a></li>
+                                <li id="pageapp-logout-li"><a href="#" id="pageapp-logout"><i class="fa fa-angle-right"></i>Sign-Out<i class="fa fa-circle"></i></a></li>
+                                <li><a href="#" id="signup-menu"><i class="fa fa-angle-right"></i>Signup<i class="fa fa-circle"></i></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.youtube.com/user/nigerianseminars" data-rel="external"><i class="fa fa-youtube-play"></i>Videos<i class="fa fa-circle"></i></a></li>
+                        <li><a href="http://blog.nigerianseminarsandtrainings.com" data-rel="external"><i class="fa fa-pencil"></i>Blog<i class="fa fa-circle"></i></a></li>
+                        <li><a href="#" id="contact-nst"><i class="fa fa-envelope"></i>Contact<i class="fa fa-circle"></i></a></li>
+                    </ul>                        
+                    <div class="sidebar-divider">
+                        Copyright 2015. All rights reserved.
+                    </div>
+                </div>
+                <!-- end of left side bar -->
+                <!-- Right side bar -->
+                <div class="snap-drawer snap-drawer-right">
+                    <div class="sidebar-header">
+                        <a href="tel:2348099909402"><i class="fa fa-phone"></i></a>
+                        <a href="sms:2348099909402"><i class="fa fa-comment"></i></a>
+                        <a href="https://www.facebook.com/nigerianseminars"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/NigerianSeminar"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-times"></i></a>                
+                    </div>
+                    <div class="sidebar-divider">
+                        Page Layout
+                    </div>     
+
+                    <ul class="sidebar-navigation">
+                        <li><a href="#" id="show-footer"><i id="show-footer-icon" class="fa fa-toggle-off"></i><span>Show Footer</span><i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="#" id="reset-content-menu"><i class="fa fa-refresh"></i>Reset Content<i class="fa fa-caret-right"></i></a></li>
+                    </ul>
+
+                    <div class="sidebar-divider">
+                        get social
+                    </div>
+
+                    <ul class="sidebar-navigation">
+                        <li><a href="https://www.facebook.com/nigerianseminars"><i class="fa fa-facebook"></i>Facebook<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="https://twitter.com/NigerianSeminar"><i class="fa fa-twitter"></i>Twitter<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="https://plus.google.com/+Nigerianseminarsandtrainings"><i class="fa fa-google-plus"></i>Google Plus<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="https://www.youtube.com/user/nigerianseminars"><i class="fa fa-youtube-play"></i>YouTube<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="https://www.linkedin.com/the-training-hub"><i class="fa fa-linkedin"></i>LinkedIn<i class="fa fa-caret-right"></i></a></li>
+                        <li><a href="https://www.pinterest.com/nigerianseminar"><i class="fa fa-pinterest"></i>Pinterest<i class="fa fa-caret-right"></i></a></li>
+                    </ul>
+
+                    <div class="sidebar-divider">
+                        Copyright 2015. All rights reserved.
+                    </div>
+                </div>
+                <!-- end of right side bar -->
+            </div>
+            <!-- end of side bars -->
+            
+            <!-- Page Content-->
+            <div id="content" class="snap-content">
+                <!-- Content Heading [for All Events]-->
+                <div class="content-heading center-text" id="pageSecondHeader">
+                    <h4>All Upcoming Events</h4>
+                </div>
+                <!-- Page Content [for All Events] -->
+                <div class="container no-bottom">
+                    <div data-role="header" data-theme="a" class="events-touch-pad" data-corners="true">
+                        <a href="#" data-theme="b" id="prev-events" data-icon="carat-l" data-iconpos="notext"></a>
+                        <a href="#" data-theme="b" id="next-events" data-icon="carat-r" data-iconpos="notext"></a>
+                        <a href="#" data-theme="b" data-icon="refresh" data-iconpos="notext" id="refresh-button"></a>
+                    </div>
+                    <ul class="thumb-left no-bottom" data-role="listview" data-inset="true" data-filter="true" id="all-events" data-event-category="" data-end="1" data-filter-placeholder="Search" data-filter-theme="c" data-autodividers="false" data-filter-reveal="false">
+                    </ul>
+                </div>
+
+
+                <!-- Content Heading [for Daily Quotes]-->
+                <div class="page-footer-content">
+                    <div class="content-heading center-text">
+                        <h4> Daily Quotes <i class="fa fa-quote-right"></i></h4>
+                    </div> 
+                    <!-- Daily Quote Content -->
+                    <a href="#" class="prev-quote"></a>
+                    <a href="#" class="next-quote"></a>
+                    <div class="content">
+                        <div class="quote-slider full-bottom" data-snap-ignore="true" id="quotes">
+                            <div id="quote-1">
+                                <p>
+                                    To be successful in life, you must constantly reject complacency <br>
+                                    <a href="#">Mojolagbe Jamiu Babatunde</a>
+                                </p>
+                            </div>
+                            <div id="quote-2">
+                                <p>
+                                    It is the believe in yourself that matters, and inner conviction that you are on the right part that will get you through life obstacles. <br>
+                                    <a href="#">Mojolagbe Jamiu Babatunde</a>
+                                </p>
+                            </div>
+                            <div id="quote-3"></div><div id="quote-4"></div><div id="quote-5"></div><div id="quote-6"></div><div id="quote-7"></div><div id="quote-8"></div><div id="quote-9"></div><div id="quote-10"></div><div id="quote-11"></div><div id="quote-12"></div><div id="quote-13"></div><div id="quote-14"></div><div id="quote-15"></div>
+                        </div>
+                        <div class="decoration"></div>            
+                    </div>
+                </div>    
+                <!-- Page Footer-->
+                <div class="footer page-footer-content">
+                    <div class="footer-socials half-bottom">
+                        <a href="https://www.facebook.com/nigerianseminars" class="footer-facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/NigerianSeminar" class="footer-twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="https://plus.google.com/+Nigerianseminarsandtrainings" class="footer-google"><i class="fa fa-google-plus"></i></a>
+                        <a href="#" class="footer-share show-share-bottom"><i class="fa fa-share-alt"></i></a>
+                        <a href="#" class="footer-up"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class="thumb-clear"></div>
+                </div>    
+                <!-- end of Page Footer-->
+            </div>
+            <!-- end of Page Content-->
+
+            <!-- Footer Share Buttons -->
+            <div class="share-bottom page-footer-content">
+                <h3>Share Page</h3>
+                <div class="share-socials-bottom">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nigerianseminarsandtrainings.com/">
+                        <i class="fa fa-facebook facebook-color"></i>
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/home?status=Check%20out%20NigerianSeminar%20https://www.nigerianseminarsandtrainings.com">
+                        <i class="fa fa-twitter twitter-color"></i>
+                        Twitter
+                    </a>
+                    <a href="https://plus.google.com/share?url=https://www.nigerianseminarsandtrainings.com">
+                        <i class="fa fa-google-plus google-color"></i>
+                        Google
+                    </a>
+
+                    <a href="https://pinterest.com/pin/create/button/?url=https://www.nigerianseminarsandtrainings.com/&media=https://www.nigerianseminarsandtrainings.com/images/og_image.png&description=Nigerian%20Seminars%20and%20Trainings">
+                        <i class="fa fa-pinterest-p pinterest-color"></i>
+                        Pinterest
+                    </a>
+                    <a href="sms:2348099909400">
+                        <i class="fa fa-comment-o sms-color"></i>
+                        Text
+                    </a>
+                    <a href="mailto:?&subject=Check this page out!&body=https://www.nigerianseminarsandtrainings.com">
+                        <i class="fa fa-envelope-o mail-color"></i>
+                        Email
+                    </a>
+                </div>
+                <a href="#" class="close-share-bottom">Close</a>
+            </div>
+            <!-- end of Footer Share Buttons -->
+        </div>
+        <!-- End of Application's Main container -->
+        
+        <!-- Custom Dialogs  -->
+        <div data-role="popup" id="popupMenu" data-history="false">
+            <ul data-role="listview" data-inset="true" style="font-weight: normal;">
+                <!-- <li data-role="list-divider">Choose an action</li> -->
+                <li data-icon="back"><a href="#" data-rel="back" id="popupMenuItm4">Exit Menu</a></li>
+                <li data-icon="info"><a href="#" id="popupMenuItm1">View details</a></li>
+                <li data-icon="calendar"><a href="#" id="popupMenuItm4">Add to calendar</a></li>
+                <li data-icon="star"><a href="#" id="popupMenuItm2">Mark event</a></li>
+            </ul>
+        </div>
+        <!-- end of Custom Dialogs -->
+    </div>
+    <!-- End of the app page -->
+    
+    <!-- JQM Pages used as pop-ups  -->
+    <div data-role="page" id="fullEventPopup" data-dialog="true" data-history="false">
+        <div data-role="header" data-theme="b" id="p-title">
+        </div>
+        <article class="ui-content" data-theme="e">
+            <div class="tabs">
+                <a href="#" class="tab-but tab-but-1 tab-active">Basic Details </a>
+                <a href="#" class="tab-but tab-but-2">Description</a>
+            </div>
+            <div class="tab-content tab-content-1" data-theme="e">
+                <strong>Organiser:</strong> <span id="p-organiser"></span><br>
+                <strong>Date:</strong> <span  id="p-dates"></span><br>
+                <strong>Venue:</strong> <span  id="p-venue"></span><br>
+                <strong>Attendance Fee:</strong> <span  id="p-fee"></span><br>
+            </div>
+            <div class="tab-content tab-content-2" data-theme="e">
+                <small id="p-description"></small>
+            </div>
+
+            <!-- <a href="#" id="shwDesc" class="ui-btn ui-shadow ui-corner-all ui-btn-a">Brief Description</a> -->
+        </article>
+        <small class="center-text">
+                <a href="#" id="p-web" rel="external" class=" ui-btn ui-mini ui-btn-inline"><i class="fa fa-globe"></i>Web</a>
+                <a href="mailto:" id="p-mail" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-envelope"></i>Mail</a>
+                <a href="tel:" id="p-call" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-phone"></i>Call</a>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-close"></i></a>
+        </small>
+    </div>
+    <div data-role="page" id="fullVenuePopup" data-dialog="true" data-history="false">
+        <div data-role="header" data-theme="b" id="v-title">
+        </div>
+        <article class="ui-content" data-theme="e">
+            <div class="tabs">
+                <a href="#" class="tab-but tab-but-1 tab-active">Basic Details </a>
+                <a href="#" class="tab-but tab-but-2">Description</a>
+            </div>
+            <div class="tab-content tab-content-1" data-theme="e">
+                <strong>Address:</strong> <span  id="v-address"></span><br>
+                <strong>Capacity:</strong> <span  id="v-capacity"></span><br>
+                <strong>Size:</strong> <span  id="v-size"></span><br>
+                <strong>Contact Person:</strong> <span  id="v-cperson"></span><br>
+            </div>
+            <div class="tab-content tab-content-2" data-theme="e">
+                <small id="v-description"></small>
+            </div>
+        </article>
+        <small class="center-text">
+                <a href="#" id="v-web" data-rel="external" class=" ui-btn ui-mini ui-btn-inline"><i class="fa fa-globe"></i>Web</a>
+                <a href="mailto:" id="v-mail" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-envelope"></i>Mail</a>
+                <a href="tel:" id="v-call" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-phone"></i>Call</a>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-close"></i></a>
+        </small>
+    </div>
+    <div data-role="page" id="fullTrProvPopup" data-dialog="true" data-history="false">
+        <div data-role="header" data-theme="b" id="trpr-title">
+        </div>
+        <article class="ui-content" data-theme="e">
+            <div class="tabs">
+                <a href="#" class="tab-but tab-but-1 tab-active">Basic Details </a>
+                <a href="#" class="tab-but tab-but-2">Description</a>
+            </div>
+            <div class="tab-content tab-content-1" data-theme="e">
+                <strong>Address:</strong> <span  id="trpr-address"></span><br>
+                <strong>Contact Person:</strong> <span  id="trpr-cperson"></span><br>
+            </div>
+            <div class="tab-content tab-content-2" data-theme="e">
+                <small id="trpr-description"></small>
+            </div>
+
+            <!-- <a href="#" id="shwDesc" class="ui-btn ui-shadow ui-corner-all ui-btn-a">Brief Description</a> -->
+        </article>
+        <small class="center-text">
+                <a href="#" id="trpr-web" data-rel="external" class=" ui-btn ui-mini ui-btn-inline"><i class="fa fa-globe"></i>Web</a>
+                <a href="mailto:" id="trpr-mail" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-envelope"></i>Mail</a>
+                <a href="tel:" id="trpr-call" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-phone"></i>Call</a>
+                <a href="#" data-rel="back" class="ui-btn ui-mini ui-btn-inline"><i class="fa fa-close"></i></a>
+        </small>
+    </div>
+    <div data-role="page" id="message-dialog" data-dialog="true" data-history="false">
+        <div data-role="header" data-theme="b">
+            <h1 style="color:#FFF">NST Dialog</h1>
+        </div>
+        <div role="main" class="ui-content">
+        <h1></h1>
+        <p></p>
+            <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">Go Back</a>
+        </div>
+    </div>
+    <!-- end of jqm pages used as pop-ups -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/classes/event.js"></script>
+    <script type="text/javascript" src="js/classes/user.js"></script>
+    <script type="text/javascript" src="js/classes/business.js"></script>
+    <script type="text/javascript" src="js/classes/quote.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-23693392-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript">var _qevents=_qevents||[];(function(){var b=document.createElement("script");b.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";b.async=true;b.type="text/javascript";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();_qevents.push({qacct:"p-2fH5lI6K2ceJA"});</script>
+            <noscript>
+                <div style="display:none">
+                <img src="//pixel.quantserve.com/pixel/p-2fH5lI6K2ceJA.gif" style="border:none" height="1" width="1" alt="Quantcast Website Audit Image"/>
+                </div>
+            </noscript>
+
+</body>

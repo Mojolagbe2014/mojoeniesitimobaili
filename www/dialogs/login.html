@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div data-role="page" class="login-page bg1" id="login-page">
+            <div class="login-page-overlay"></div>
+            <div class="login-page-wrapper">
+                <a href="#" class="login-logo"></a>
+                <p>Please enter your login credentials below.</p>
+                <input type="text" class="login-username" value="Email">
+                <input type="password" class="login-password" value="password">
+                <select name="select-usertype-login" id="select-usertype-login">
+                    <option value="">User type</option>
+                    <option value="subscriber">Subscriber</option>
+                    <option value="business">Business</option>
+                </select>
+                <div class="one-half">
+                    <a href="#" id="login-button" class="button button-green">Login</a>
+                </div>
+                <div class="one-half last-column">
+                    <a href="#" data-rel="back" class="button button-red">Close</a>
+                </div>
+                <div class="clear"></div>
+                <a class="forgot" href="#">Forgot Password?</a>
+            </div>            
+        </div>
+    </body>
+</html>
